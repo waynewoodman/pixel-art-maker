@@ -7,6 +7,9 @@ const picker = document.getElementById("sizePicker");
 const canvas = document.getElementById("pixelCanvas");
 
 // When size is submitted by the user, call makeGrid()
+picker.addEventListener(function() {
+  preventDefault();
+})
 
 function makeGrid() {
   for (let i = 0; i < height.value; i += 1) {
