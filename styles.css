@@ -1,7 +1,10 @@
+/* Add custom font in h1 */
 @font-face {
   font-family: starjedi;
   src: url(./star_jedi/starjedi/Starjedi.ttf);
 }
+
+/* Add custom font in h2 */
 @font-face {
   font-family: starjhol;
   src: url(./star_jedi/starjedi/Starjhol.ttf);
