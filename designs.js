@@ -7,8 +7,9 @@ const picker = document.getElementById("sizePicker");
 const canvas = document.getElementById("pixelCanvas");
 
 // When size is submitted by the user, call makeGrid()
-picker.addEventListener(function() {
-  preventDefault();
+picker.addEventListener("click", function(grid) {
+  grid.preventDefault();
+  makeGrid();
 })
 
 function makeGrid() {
@@ -22,4 +23,3 @@ function makeGrid() {
 // Your code goes here!
 
 }
-makeGrid();
