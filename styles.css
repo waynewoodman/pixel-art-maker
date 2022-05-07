@@ -1,14 +1,24 @@
+@font-face {
+  font-family: starjedi;
+  src: url(./star_jedi/starjedi/Starjedi.ttf);
+}
+@font-face {
+  font-family: starjhol;
+  src: url(./star_jedi/starjedi/Starjhol.ttf);
+}
+
 body {
     text-align: center;
 }
 
 h1 {
-    font-family: Monoton;
-    font-size: 70px;
+    font-family: starjedi, sans-serif;
+    font-size: 80px;
     margin: 0.2em;
 }
 
 h2 {
+  font-family: starjhol, sans-serif;
     margin: 1em 0 0.25em;
 }
 

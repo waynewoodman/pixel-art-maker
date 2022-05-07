@@ -7,9 +7,16 @@ const picker = document.getElementById("sizePicker");
 const canvas = document.getElementById("pixelCanvas");
 
 // When size is submitted by the user, call makeGrid()
-picker.addEventListener("click", function(grid) {
+picker.addEventListener("submit", function(grid) {
+  canvas.innerHTML = "";
   grid.preventDefault();
   makeGrid();
+});
+
+canvas.addEventListener("click", function(grid) {
+  if (grid.target.nodeName === "TD") {
+    grid.target.style.backgroundColor = colorPicker.value;
+  }
 })
 
 function makeGrid() {
@@ -19,6 +26,8 @@ function makeGrid() {
       row.insertCell(0);
     }
 }
+
+
 
 // Your code goes here!
 
